@@ -1,0 +1,66 @@
+POST http://127.0.0.1:3001/api/v1/users 
+content-type: application/json
+
+{
+    "name": "aaa"
+}
+
+###
+
+GET http://127.0.0.1:3001/api/v1/users 
+
+###
+
+PUT http://127.0.0.1:3001/api/v1/user/uid:42dcada0-1be2-43cf-a3b9-29a35025408a
+content-type: application/json
+
+{
+    "name":"name1111",
+    "self_introduction":"self2222",
+    "email":"aaa@google.com"
+}
+
+	Title  string
+	Body   []string
+	Sender string
+	Link   []string
+	Tag    []string
+
+###
+
+POST http://127.0.0.1:3001/api/v1/contents
+content-type: application/json
+
+{
+    "title":"title 1",
+    "body":["this is sentence 1a", "and this is 1b"],
+    "body_type":"markdown",
+    "sender":"fake user contact info 1",
+    "link": [],
+    "tag":[]
+}
+
+###
+
+POST http://127.0.0.1:3001/api/v1/contents
+content-type: application/json
+
+{
+    "title":"title 2",
+    "body":["this is sentence 2a", "and this is 2b"],
+    "body_type":"plain",
+    "sender":"fake user contact info 2",
+    "link": [],
+    "tag":[]
+}
+
+###
+
+GET http://127.0.0.1:3001/api/v1/contents?count=999&offset=0
+content-type: application/json
+
+
+###
+
+GET http://127.0.0.1:3001/api/v1/content/uid:6f6185de-c181-4663-9b04-875da6ad8c03
+content-type: application/json

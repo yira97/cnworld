@@ -1,0 +1,9 @@
+{
+   "route" : {
+       "port":"3001"
+   },
+   "mongodb": {
+    "uri": "mongodb+srv://u1:ANoxky7X1UnDPse2@cluster0.ns5s4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "database":"blog"
+    }
+}

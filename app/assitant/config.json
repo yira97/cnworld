@@ -1,0 +1,10 @@
+{
+    "port": "3002",
+    "mongodb": {
+        "uri": "mongodb+srv://u1:ANoxky7X1UnDPse2@cluster0.ns5s4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "database":"assitant"
+    },
+    "session": {
+        "secret": "6E5A7134743777217A25432A462D4A614E645267556B58703273357638782F41"
+    }
+}
